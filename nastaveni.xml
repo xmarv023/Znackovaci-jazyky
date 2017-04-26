@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Nastaveni hry Euro Truck Simulator 2 -->
+<databazeNastaveniUzivatelu  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchema.xsd">
+    <nastaveni iduzivatele="1" country="Czech" uroven="Začátečník" jmeno="Vojta" avatar="Avatar01" ujetokm="623">
+        <zobrazeni api="directX11" default-zobrazeni="no">
+            <cela_obrazovka>true</cela_obrazovka>
+            <jas>50</jas>
+            <rozliseni>1080p</rozliseni>
+            <obnovovaci_frekvence>60</obnovovaci_frekvence>                 
+            <vertikalni_synchronizace>true</vertikalni_synchronizace>
+            <MLAA>false</MLAA>
+            <HDR>false</HDR>
+            <DOF>true</DOF>
+            <slunecni_paprsky>true</slunecni_paprsky>
+            <korekce_barev>true</korekce_barev>
+            <detaily_odlesku>Střední</detaily_odlesku>
+            <kvalita_vegetace>Nízká</kvalita_vegetace>
+            <hustota_travy>Vypnuto</hustota_travy>
+            <kvalita_stinu>Střední</kvalita_stinu>
+            <velikost_stinove_textury>Nízká</velikost_stinove_textury>
+            <kvalita_pocasi>Střední</kvalita_pocasi>
+            <kvalita_zrcatek>Nízká</kvalita_zrcatek>
+            <vykreslovana_vzdalenost_zrcatek>Nízká</vykreslovana_vzdalenost_zrcatek>
+            <kvalita_textur>Střední</kvalita_textur>
+            <anizotropni_filtrovani>20</anizotropni_filtrovani>
+            <normalove_mapovani>true</normalove_mapovani>
+            <hlavni_svetla_vozidel>true</hlavni_svetla_vozidel>
+            <vedlejsi_svetla_vozidel>true</vedlejsi_svetla_vozidel>
+            <vykreslovana_vzdalenost_svetel>Nízká</vykreslovana_vzdalenost_svetel>
+            <chodci>true</chodci>
+        </zobrazeni>
+
+        <zvuk vystup="reproduktor" default-zvuk="no">
+            <celkova_hlasitost>66</celkova_hlasitost>
+            <hlasitost_efektu>100</hlasitost_efektu>
+            <hlasitost_hudby>30</hlasitost_hudby>
+            <prevratit_stereo>false</prevratit_stereo>
+            <zvukove_efekty>true</zvukove_efekty>
+            <hudba>true</hudba>
+            <zvukovy_signal_pri_couvani>true</zvukovy_signal_pri_couvani>
+            <hlucne_vodici_cary>true</hlucne_vodici_cary>     
+        </zvuk>
+    </nastaveni>
+    <nastaveni iduzivatele="2" country="Germany" uroven="Pokročilý" jmeno="Ulrich" avatar="Avatar08" ujetokm="2323">
+        <zobrazeni api="directX11" default-zobrazeni="no">
+            <cela_obrazovka>true</cela_obrazovka>
+            <jas>50</jas>
+            <rozliseni>1080p</rozliseni>
+            <obnovovaci_frekvence>60</obnovovaci_frekvence>
+            <vertikalni_synchronizace>true</vertikalni_synchronizace>
+            <MLAA>true</MLAA>
+            <HDR>false</HDR>
+            <DOF>true</DOF>
+            <slunecni_paprsky>false</slunecni_paprsky>
+            <korekce_barev>true</korekce_barev>
+            <detaily_odlesku>Vysoká</detaily_odlesku>
+            <kvalita_vegetace>Vysoká</kvalita_vegetace>
+            <hustota_travy>Vypnuto</hustota_travy>
+            <kvalita_stinu>Vysoká</kvalita_stinu>
+            <velikost_stinove_textury>Vysoká</velikost_stinove_textury>
+            <kvalita_pocasi>Vysoká</kvalita_pocasi>
+            <kvalita_zrcatek>Nízká</kvalita_zrcatek>
+            <vykreslovana_vzdalenost_zrcatek>Nízká</vykreslovana_vzdalenost_zrcatek>
+            <kvalita_textur>Střední</kvalita_textur>
+            <anizotropni_filtrovani>20</anizotropni_filtrovani>
+            <normalove_mapovani>true</normalove_mapovani>
+            <hlavni_svetla_vozidel>true</hlavni_svetla_vozidel>
+            <vedlejsi_svetla_vozidel>true</vedlejsi_svetla_vozidel>
+            <vykreslovana_vzdalenost_svetel>Nízká</vykreslovana_vzdalenost_svetel>
+            <chodci>true</chodci>
+        </zobrazeni>
+
+        <zvuk vystup="sluchatka" default-zvuk="yes">
+            <celkova_hlasitost>66</celkova_hlasitost>
+            <hlasitost_efektu>1</hlasitost_efektu>
+            <hlasitost_hudby>30</hlasitost_hudby>
+            <prevratit_stereo>false</prevratit_stereo>
+            <zvukove_efekty>false</zvukove_efekty>
+            <hudba>true</hudba>
+            <zvukovy_signal_pri_couvani>true</zvukovy_signal_pri_couvani>
+            <hlucne_vodici_cary>false</hlucne_vodici_cary>
+        </zvuk>
+    </nastaveni>
+    <nastaveni iduzivatele="3" country="Czech" uroven="Pokročilý" jmeno="Kristýna" avatar="Avatar02" ujetokm="1612">
+        <zobrazeni api="directX11" default-zobrazeni="yes">
+            <cela_obrazovka>false</cela_obrazovka>
+            <jas>40</jas>
+            <rozliseni>720p</rozliseni>
+            <obnovovaci_frekvence>60</obnovovaci_frekvence>
+            <vertikalni_synchronizace>true</vertikalni_synchronizace>
+            <MLAA>false</MLAA>
+            <HDR>false</HDR>
+            <DOF>false</DOF>
+            <slunecni_paprsky>true</slunecni_paprsky>
+            <korekce_barev>true</korekce_barev>           
+            <detaily_odlesku>Vysoká</detaily_odlesku>
+            <kvalita_vegetace>Vysoká</kvalita_vegetace>
+            <hustota_travy>Vypnuto</hustota_travy>
+            <kvalita_stinu>Vysoká</kvalita_stinu>
+            <velikost_stinove_textury>Vysoká</velikost_stinove_textury>
+            <kvalita_pocasi>Vysoká</kvalita_pocasi>
+            <kvalita_zrcatek>Nízká</kvalita_zrcatek>
+            <vykreslovana_vzdalenost_zrcatek>Nízká</vykreslovana_vzdalenost_zrcatek>
+            <kvalita_textur>Střední</kvalita_textur>
+            <anizotropni_filtrovani>20</anizotropni_filtrovani>
+            <normalove_mapovani>true</normalove_mapovani>
+            <hlavni_svetla_vozidel>true</hlavni_svetla_vozidel>
+            <vedlejsi_svetla_vozidel>true</vedlejsi_svetla_vozidel>
+            <vykreslovana_vzdalenost_svetel>Nízká</vykreslovana_vzdalenost_svetel>
+            <chodci>true</chodci>
+        </zobrazeni>
+
+        <zvuk vystup="reproduktor" default-zvuk="no">
+            <celkova_hlasitost>100</celkova_hlasitost>
+            <hlasitost_efektu>100</hlasitost_efektu>
+            <hlasitost_hudby>80</hlasitost_hudby>
+            <prevratit_stereo>false</prevratit_stereo>
+            <zvukove_efekty>true</zvukove_efekty>
+            <hudba>true</hudba>
+            <zvukovy_signal_pri_couvani>false</zvukovy_signal_pri_couvani>
+            <hlucne_vodici_cary>true</hlucne_vodici_cary>
+        </zvuk>
+    </nastaveni>
+    <nastaveni iduzivatele="4" country="USA" uroven="Začátečník" jmeno="Tom" avatar="Avatar05" ujetokm="52">
+        <zobrazeni api="directX11" default-zobrazeni="no">
+            <cela_obrazovka>true</cela_obrazovka>
+            <jas>70</jas>
+            <rozliseni>1080p</rozliseni>
+            <obnovovaci_frekvence>60</obnovovaci_frekvence>
+            <vertikalni_synchronizace>false</vertikalni_synchronizace>
+            <MLAA>true</MLAA>
+            <HDR>false</HDR>
+            <DOF>false</DOF>
+            <slunecni_paprsky>true</slunecni_paprsky>
+            <korekce_barev>true</korekce_barev>
+            <detaily_odlesku>Vysoká</detaily_odlesku>
+            <kvalita_vegetace>Vysoká</kvalita_vegetace>
+            <hustota_travy>Vypnuto</hustota_travy>
+            <kvalita_stinu>Vysoká</kvalita_stinu>
+            <velikost_stinove_textury>Vysoká</velikost_stinove_textury>
+            <kvalita_pocasi>Vysoká</kvalita_pocasi>
+            <kvalita_zrcatek>Nízká</kvalita_zrcatek>
+            <vykreslovana_vzdalenost_zrcatek>Nízká</vykreslovana_vzdalenost_zrcatek>
+            <kvalita_textur>Střední</kvalita_textur>
+            <anizotropni_filtrovani>20</anizotropni_filtrovani>
+            <normalove_mapovani>true</normalove_mapovani>
+            <hlavni_svetla_vozidel>true</hlavni_svetla_vozidel>
+            <vedlejsi_svetla_vozidel>true</vedlejsi_svetla_vozidel>
+            <vykreslovana_vzdalenost_svetel>Nízká</vykreslovana_vzdalenost_svetel>
+            <chodci>false</chodci>
+        </zobrazeni>
+
+        <zvuk vystup="sluchatka" default-zvuk="no">
+            <celkova_hlasitost>100</celkova_hlasitost>
+            <hlasitost_efektu>100</hlasitost_efektu>
+            <hlasitost_hudby>80</hlasitost_hudby>
+            <prevratit_stereo>false</prevratit_stereo>
+            <zvukove_efekty>false</zvukove_efekty>
+            <hudba>true</hudba>
+            <zvukovy_signal_pri_couvani>false</zvukovy_signal_pri_couvani>
+            <hlucne_vodici_cary>true</hlucne_vodici_cary>
+        </zvuk>
+    </nastaveni>
+    <nastaveni iduzivatele="5" country="USA" uroven="Začátečník" jmeno="Lucia" avatar="Avatar02" ujetokm="3">
+        <zobrazeni api="directX11" default-zobrazeni="no">
+            <cela_obrazovka>false</cela_obrazovka>
+            <jas>50</jas>
+            <rozliseni>720p</rozliseni>
+            <obnovovaci_frekvence>60</obnovovaci_frekvence>
+            <vertikalni_synchronizace>true</vertikalni_synchronizace>
+            <MLAA>true</MLAA>
+            <HDR>true</HDR>
+            <DOF>true</DOF>
+            <slunecni_paprsky>true</slunecni_paprsky>
+            <korekce_barev>true</korekce_barev>
+            <detaily_odlesku>Vysoká</detaily_odlesku>
+            <kvalita_vegetace>Vysoká</kvalita_vegetace>
+            <hustota_travy>Vypnuto</hustota_travy>
+            <kvalita_stinu>Vysoká</kvalita_stinu>
+            <velikost_stinove_textury>Vysoká</velikost_stinove_textury>
+            <kvalita_pocasi>Vysoká</kvalita_pocasi>
+            <kvalita_zrcatek>Nízká</kvalita_zrcatek>
+            <vykreslovana_vzdalenost_zrcatek>Nízká</vykreslovana_vzdalenost_zrcatek>
+            <kvalita_textur>Střední</kvalita_textur>
+            <anizotropni_filtrovani>20</anizotropni_filtrovani>
+            <normalove_mapovani>true</normalove_mapovani>
+            <hlavni_svetla_vozidel>true</hlavni_svetla_vozidel>
+            <vedlejsi_svetla_vozidel>true</vedlejsi_svetla_vozidel>
+            <vykreslovana_vzdalenost_svetel>Nízká</vykreslovana_vzdalenost_svetel>
+            <chodci>false</chodci>
+        </zobrazeni>
+
+        <zvuk vystup="reproduktor" default-zvuk="no">
+            <celkova_hlasitost>100</celkova_hlasitost>
+            <hlasitost_efektu>100</hlasitost_efektu>
+            <hlasitost_hudby>80</hlasitost_hudby>
+            <prevratit_stereo>false</prevratit_stereo>
+            <zvukove_efekty>false</zvukove_efekty>
+            <hudba>false</hudba>
+            <zvukovy_signal_pri_couvani>false</zvukovy_signal_pri_couvani>
+            <hlucne_vodici_cary>false</hlucne_vodici_cary>
+        </zvuk>
+    </nastaveni>
+</databazeNastaveniUzivatelu>

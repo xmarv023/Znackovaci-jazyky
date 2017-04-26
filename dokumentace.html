@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <title>Vojtěch Martínek | Nastavení ETS2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                margin: 0;
+                font-family: 'Open Sans', sans-serif;
+            }
+            
+            h1{
+                font-size: 25px;
+            }
+            
+            h2{
+                font-size: 17px;
+            }
+            header{ 
+                background-color: #00a6e5;
+                color:white;
+            }
+            
+            .header-container{
+                padding: 20px;
+                padding-left: 100px;
+            }
+            
+            nav{
+                margin: 0 auto;
+                height: 60px;
+                max-width: 1170px;
+            }
+           
+            
+            nav ul li{
+                display: inline-block;
+                float: left;
+                padding-left: 30px;
+                padding-right: 30px;
+                line-height: 60px;
+            }
+            
+            main{
+                max-width: 1170px;
+                margin: 0 auto;
+            }
+            
+            table{
+                width: 100%;
+                margin-bottom: 30px;
+                border: 1px solid #ccc;
+            }
+            
+            table th{
+                text-align: left;
+            }
+            table tr{
+                height: 30px;
+            }
+            
+            footer{
+                background-color: #00a6e5;
+                height: 50px;
+                line-height: 50px;
+                color: white;
+                max-width: 1170px;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 50px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <h1>
+                    Nastavení Euro Truck Simulator 2
+                </h1>
+                <p>XML dokument popisuje část nastavení hry pro 5 uživatelů</p>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#uvod">Úvod</a></li>
+                <li><a href="#pouzite_technologie">Použité technologie</a></li>
+                <li><a href="#elementy">Elementy</a></li>
+                <li><a href="#atributy">Atributy</a></li>
+                <li><a href="#transformace">Transformace</a></li>
+                <li><a href="#zaver">Závěr</a></li>
+                <li><a href="#paticka">Patička</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="uvod">
+                <article>
+                    <h1>Úvod</h1>
+                    <p>Tato práce popisuje část nastavení hry Euro Truck Simulator 2 do XML formátu,
+                    a následném vytvoření XML schématu včetně transformací z těchto dat.
+                    Z důvodu velkého objemu reálného nastavení je v XML dokumentu zobrazena pouze jeho část.
+                </article>
+            </section>
+            <section id="pouzite_technologie">
+                <article>
+                    <h1>Použité technologie</h1>
+                    <h2>Vývojové prostředí</h2>
+                    <p>NetBeans IDE 8.2</p>
+                    <h2>Využité zdroje</h2>
+                    <p>W3Schools</p>
+                    <p>oficiální validátor W3C</p>
+                    <p>github</p>
+                </article>
+            </section>
+            <section id="elementy">
+                <h1>Elementy</h1>                 
+                <article>
+                <table>
+                    <tr>
+                        <th>Název</th>
+                        <th>Type</th>
+                        <th>minOccurs</th>
+                        <th>maxOccurs</th>
+                    </tr>
+                    <tr>
+                        <td>zobrazeni</td>
+                        <td>xs:complexType</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>zvuk</td>
+                        <td>xs:complexType</td>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <h2>Detail elementů</h2>
+                <h3>zobrazeni</h3>
+                <table>
+                    <tr>
+                        <th>Název</th>
+                        <th>Type</th>
+                        <th>minOccurs</th>
+                        <th>maxOccurs</th>
+                        <th>Rozsah</th>
+                    </tr>
+                    <tr>
+                        <td>cela_obrazovka</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>jas</td>
+                        <td>xs:integer</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0-100</td>
+                    </tr>
+                    <tr>
+                        <td>rozliseni</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>480p/720p/1080p</td>
+                    </tr>
+                    <tr>
+                        <td>obnovovaci_frekvence</td>
+                        <td>xs:integer</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0-100</td>
+                    </tr>
+                    <tr>
+                        <td>vertikalni_synchronizace</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>MLAA</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>HDR</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>DOF</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>slunecni_paprsky</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>korekce_barev</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>detaily_odlesku</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Nízká/Střední/Vysoká</td>
+                    </tr>
+                    <tr>
+                        <td>kvalita_vegetace</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Nízká/Střední/Vysoká</td>
+                    </tr>
+                    <tr>
+                        <td>hustota_travy</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Vypnuto/Nízká/Vysoká</td>
+                    </tr>
+                    <tr>
+                        <td>kvalita_stinu</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Vypnuto/Nízká/Střední/Vysoká</td>
+                    </tr>
+                    <tr>
+                        <td>velikost_stinove_textury</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Nízká/Vysoká</td>
+                    </tr>
+                    <tr>
+                        <td>kvalita_pocasi</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Nízká/Střední/Vysoká/Ultra</td>
+                    </tr>
+                    <tr>
+                        <td>kvalita_zrcatek</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Nízká/Střední/Vysoká</td>
+                    </tr>
+                    <tr>
+                        <td>vykreslovana_vzdalenost_zrcatek</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Nízká/Střední/Vysoká/Ultra</td>
+                    </tr>
+                    <tr>
+                        <td>kvalita_textur</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Nízká/Střední/Vysoká</td>
+                    </tr>
+                    <tr>
+                        <td>anizotropni_filtrovani</td>
+                        <td>xs:integer</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0-100</td>
+                    </tr>
+                    <tr>
+                        <td>normalove_mapovani</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>hlavni_svetla_vozidel</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>vedlejsi_svetla_vozidel</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>vykreslovana_vzdalenost_svetel</td>
+                        <td>xs:string</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>Vypnuto/Nízká/Střední/Vysoká</td>
+                    </tr>
+                    <tr>
+                        <td>chodci</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                </table>
+                <h3>zvuk</h3>
+                <table>
+                    <tr>
+                        <th>Název</th>
+                        <th>Type</th>
+                        <th>minOccurs</th>
+                        <th>maxOccurs</th>
+                        <th>Rozsah</th>
+                    </tr>
+                    <tr>
+                        <td>celkova_hlasitost</td>
+                        <td>xs:integer</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0-100</td>
+                    </tr>
+                    <tr>
+                        <td>hlasitost_efektu</td>
+                        <td>xs:integer</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0-100</td>
+                    </tr>
+                    <tr>
+                        <td>hlasitost_hudby</td>
+                        <td>xs:integer</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0-100</td>
+                    </tr>
+                    <tr>
+                        <td>prevratit_stereo</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>zvukove_efekty</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>hudba</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>zvukovy_signal_pri_couvani</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                    <tr>
+                        <td>hlucne_vodici_cary</td>
+                        <td>xs:boolean</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>true/false</td>
+                    </tr>
+                </table>
+                </article>
+            </section>
+            <section id="atributy">
+                <h1>Atributy</h1>
+                <article>
+                    <table>
+                        <tr>
+                            <th>Název</th>
+                            <th>Popis</th>
+                        </tr>
+                        <tr>
+                            <td>iduzivatele</td>
+                            <td>jedinečný identifikátor uživatele</td>
+                        </tr>
+                        <tr>
+                            <td>country</td>
+                            <td>zvolená země</td>
+                        </tr>
+                        <tr>
+                            <td>uroven</td>
+                            <td>úroveň hráče</td>
+                        </tr>
+                        <tr>
+                            <td>jmeno</td>
+                            <td>jméno hráče</td>
+                        </tr>
+                        <tr>
+                            <td>avatar</td>
+                            <td>zvolený obrázek profilu</td>
+                        </tr>
+                        <tr>
+                            <td>ujetokm</td>
+                            <td>počet ujetých kilometrů</td>
+                        </tr>
+                        <tr>
+                            <td>api</td>
+                            <td>ovladač pro vykreslování grafiky</td>
+                        </tr>
+                        <tr>
+                            <td>default-zobrazeni</td>
+                            <td>výchozí nastavení grafiky</td>
+                        </tr>
+                        <tr>
+                            <td>vystup</td>
+                            <td>zařízení pro výstup zvuku</td>
+                        </tr>
+                        <tr>
+                            <td>default-zvuk</td>
+                            <td>výchozí nastavení zvuku</td>
+                        </tr>
+                    </table>
+                </article>
+            </section>
+            
+            <section id="transformace">
+                <h1>Transformace</h1>
+                <article>
+                    <p>Projekt obsahuje 2 transformace, a to konkrétně soubory
+                        <b>transformace_vsichni.xsl</b> a <b>transformace_vyber.xsl</b>.</p>
+                        
+                    <p>První transformace (transformace_foreach.xsl) vypíše do jasonu pomocí foreach cyklu všechny uživatele
+                        a vypíše základní informace o uživateli a 4 elementy z nastavení.</p>
+                    
+                    <p>Druhá transformace (transformace_vyber.xsl) vybere uživatele, kteří mají režim <b>cela_obrazovka = true</b> a do jasonu zobrazí stejné informace.</p>
+                </article>
+            </section>
+            <section id="zaver">
+                <h1>Závěr</h1>
+                <article>
+                    <p>Pravdou je, že při prvním pohledu na XML jsem tomuto formátu
+                        nevěnoval tolik pozoronosti. Během této práce jsem si teprve uvědomil, k čemu se v praxi může
+                        formát XML využít. K mé zkušenosti jsem zjistil, že síla XML se může ukázat
+                        například u automatického zpracování příchozích plateb na platební účet,
+                        kde informace o platbách mohou být automaticky přiřazovány k objednávkám.</p>
+                    <p>V budoucnu se na XML více zaměřím a určitě ho využiji pro automatizaci a výměnu dat.</p>
+                
+                </article>
+            </section>
+        </main>
+        <footer id="paticka">
+            Vypracoval Vojtěch Martínek v rámci předmětu Značkovací jazyky v roce 2017.
+        </footer>
+    </body>
+</html>

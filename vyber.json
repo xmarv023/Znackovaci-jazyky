@@ -1,0 +1,41 @@
+
+        [
+        
+                {
+                    "iduzivatele": "1",
+                    "country": "Czech",
+                    "uroven": "Začátečník",
+                    "avatar": "Avatar01",
+                    "iduzivatele": "1",
+                    "cela_obrazovka": "true",
+                    "jas": "50",
+                    "rozliseni": "1080p",
+                    "obnovovaci_frekvence": "60"
+                }
+                ,
+                {
+                    "iduzivatele": "2",
+                    "country": "Germany",
+                    "uroven": "Pokročilý",
+                    "avatar": "Avatar08",
+                    "iduzivatele": "2",
+                    "cela_obrazovka": "true",
+                    "jas": "50",
+                    "rozliseni": "1080p",
+                    "obnovovaci_frekvence": "60"
+                }
+                ,
+                {
+                    "iduzivatele": "4",
+                    "country": "USA",
+                    "uroven": "Začátečník",
+                    "avatar": "Avatar05",
+                    "iduzivatele": "4",
+                    "cela_obrazovka": "true",
+                    "jas": "70",
+                    "rozliseni": "1080p",
+                    "obnovovaci_frekvence": "60"
+                }
+                
+        ]
+    

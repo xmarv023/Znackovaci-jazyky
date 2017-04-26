@@ -1,0 +1,283 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="databazeNastaveniUzivatelu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nastaveni" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="nastaveni">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:annotation>
+                  <xs:documentation>Nastaveni hry Euro Truck Simulator 2</xs:documentation>
+                </xs:annotation>
+                <xs:element name="zobrazeni">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="cela_obrazovka" type="xs:boolean" />
+                      <xs:element name="jas">
+                         <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="0"/>
+                                <xs:maxInclusive value="100"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="rozliseni">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                                <xs:enumeration value="1080p"/>
+                                <xs:enumeration value="720p"/>
+                                <xs:enumeration value="480p"/>
+                          </xs:restriction>                  
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="obnovovaci_frekvence">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="30"/>
+                                <xs:maxInclusive value="200"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="vertikalni_synchronizace" type="xs:boolean"/>
+                      <xs:element name="MLAA" type="xs:boolean"/>
+                      <xs:element name="HDR" type="xs:boolean"/>
+                      <xs:element name="DOF" type="xs:boolean"/>
+                      <xs:element name="slunecni_paprsky" type="xs:boolean"/>
+                      <xs:element name="korekce_barev" type="xs:boolean"/>
+                      <xs:element name="detaily_odlesku">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Střední"/>
+                                    <xs:enumeration value="Vysoká"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="kvalita_vegetace">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Střední"/>
+                                    <xs:enumeration value="Vysoká"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="hustota_travy">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Vypnuto"/>
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Vysoká"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="kvalita_stinu">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Vypnuto"/>
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Střední"/>
+                                    <xs:enumeration value="Vysoká"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="velikost_stinove_textury">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Vysoká"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="kvalita_pocasi">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Střední"/>
+                                    <xs:enumeration value="Vysoká"/>
+                                    <xs:enumeration value="Ultra"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="kvalita_zrcatek">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Střední"/>
+                                    <xs:enumeration value="Vysoká"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="vykreslovana_vzdalenost_zrcatek">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Střední"/>
+                                    <xs:enumeration value="Vysoká"/>
+                                    <xs:enumeration value="Ultra"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="kvalita_textur">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Střední"/>
+                                    <xs:enumeration value="Vysoká"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="anizotropni_filtrovani">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="0"/>
+                                <xs:maxInclusive value="100"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="normalove_mapovani" type="xs:boolean"/>
+                      <xs:element name="hlavni_svetla_vozidel" type="xs:boolean"/>
+                      <xs:element name="vedlejsi_svetla_vozidel" type="xs:boolean"/>
+                      <xs:element name="vykreslovana_vzdalenost_svetel">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Vypnuto"/>
+                                    <xs:enumeration value="Nízká"/>
+                                    <xs:enumeration value="Střední"/>
+                                    <xs:enumeration value="Vysoká"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="chodci" type="xs:boolean"/>
+                    </xs:sequence>
+                    <xs:attribute name="api">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string"/>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="default-zobrazeni">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="no"/>
+                                <xs:enumeration value="yes"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="zvuk">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="celkova_hlasitost">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="0"/>
+                                <xs:maxInclusive value="100"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="hlasitost_efektu">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="0"/>
+                                <xs:maxInclusive value="100"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="hlasitost_hudby">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:minExclusive value="0"/>
+                                <xs:maxInclusive value="100"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="prevratit_stereo" type="xs:boolean"/>
+                      <xs:element name="zvukove_efekty" type="xs:boolean"/>
+                      <xs:element name="hudba" type="xs:boolean"/>
+                      <xs:element name="zvukovy_signal_pri_couvani" type="xs:boolean"/>                        
+                      <xs:element name="hlucne_vodici_cary" type="xs:boolean"/>
+                    </xs:sequence>
+                    <xs:attribute name="vystup">
+                        <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                      <xs:enumeration value="reproduktor"/>
+                                      <xs:enumeration value="sluchatka"/>
+                                </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="default-zvuk">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="no"/>
+                                <xs:enumeration value="yes"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                  </xs:complexType>
+                </xs:element>
+                
+            </xs:sequence>
+            <xs:attribute name="iduzivatele">
+                <xs:simpleType>
+                        <xs:restriction base="xs:nonNegativeInteger">
+                            <xs:minExclusive value="0"/>
+                            <xs:maxInclusive value="9999999"/>
+                        </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="uroven">
+                <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                              <xs:enumeration value="Začátečník"/>
+                              <xs:enumeration value="Mírně pokročilý"/>
+                              <xs:enumeration value="Pokročilý"/>
+                              <xs:enumeration value="Profesionál"/>
+                        </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="country">
+                <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                              <xs:enumeration value="Czech"/>
+                              <xs:enumeration value="USA"/>
+                              <xs:enumeration value="Germany"/>
+                        </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="jmeno" type="xs:string"/>
+            <xs:attribute name="avatar">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Avatar01"/>
+                        <xs:enumeration value="Avatar02"/>
+                        <xs:enumeration value="Avatar03"/>
+                        <xs:enumeration value="Avatar04"/>
+                        <xs:enumeration value="Avatar05"/>
+                        <xs:enumeration value="Avatar06"/>
+                        <xs:enumeration value="Avatar07"/>
+                        <xs:enumeration value="Avatar08"/>
+                        <xs:enumeration value="Avatar09"/>
+                        <xs:enumeration value="Avatar10"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attribute name="ujetokm">
+                <xs:simpleType>
+                        <xs:restriction base="xs:nonNegativeInteger">
+                            <xs:minExclusive value="0"/>
+                            <xs:maxInclusive value="9999999"/>
+                        </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+          </xs:complexType>
+    </xs:element>
+</xs:schema>
